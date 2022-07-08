@@ -175,7 +175,7 @@ color: var(--acc);
 }
 
 .flex-features .item { 
-flex-basis: calc((100% - var(--indent) * (var(--features)-1))/var(--features)); 
+flex-basis: calc((100% - var(--indent) * (var(--features) - 1))/var(--features)); 
 padding-top: 94px;
 }
 
@@ -211,7 +211,7 @@ margin-bottom: 10px;}
 }
 
 .flex-subdev .item {
-    flex-basis: calc((100% - var(--indent) * (var(--subdev)-1))/var(--subdev));
+    flex-basis: calc((100% - var(--indent) * (var(--subdev) - 1))/var(--subdev));
 }
 .command{background-color:var(--bcg-light);}
 
@@ -222,7 +222,7 @@ margin-bottom: 10px;}
 }
 
 .flex-command .item{
-    flex-basis: calc((100% - var(--indent) * (var(--command)-1))/var(--command));
+    flex-basis: calc((100% - var(--indent) * (var(--command) - 1))/var(--command));
 }
 
 .title-command{
