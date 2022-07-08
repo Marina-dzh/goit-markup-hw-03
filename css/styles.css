@@ -11,6 +11,8 @@
     --contact-footer:rgba(255, 255, 255, 0.6);
     --indent: 30px;
     --features: 4;
+    --subdev: 3;
+    --command: 4;
 }
 
 
@@ -34,11 +36,10 @@ h3,
 h4,
 h5,
 h6,
-p,
-img {
+p {
     margin: 0;
 }
-
+img{display: block;}
 /* global  */
 body {
     color: var(--main-text-color);
@@ -49,7 +50,7 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-    outline: 1px solid tomato;
+    outline: 1px solid yellow;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -141,7 +142,9 @@ color: var(--acc);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
-
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn{
@@ -164,12 +167,14 @@ color: var(--acc);
 .flex-features {display: flex;
     flex-wrap: wrap;
     gap: var(--indent);
+
 }
+
 .flex-features .item { 
 flex-basis: calc((100% - var(--indent) * (var(--features)-1))/var(--features)); 
-
-
 }
+
+
 .subtitle {
     color: var(--scnd-text-color);
     font-weight: 700;
@@ -189,9 +194,31 @@ margin-bottom: 10px;}
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
 
+
+.flex-subdev{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+.flex-subdev .item {
+    flex-basis: calc((100% - var(--indent) * (var(--subdev)-1))/var(--subdev));
+}
 .command{background-color:var(--bcg-light);}
+
+.flex-command{
+display: flex;
+flex-wrap: wrap;
+gap: var(--indent);
+}
+
+.flex-command .item{
+flex-basis: calc((100% - var(--indent) * (var(--command)-1))/var(--command));
+}
 
 .title-command{
     color:var(--scnd-text-color) ;
@@ -199,15 +226,19 @@ margin-bottom: 10px;}
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+margin-bottom: 10px;}
 
 .descr-command{
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;}
 
 .item-command{background-color:var(--bcg)  ;}
+.item-command img{margin-bottom: 30px;}
+.command-lable{}
 
 /* footer */
 .footer{
