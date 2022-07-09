@@ -53,15 +53,19 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding-left: 15px;
     padding-right: 15px;
-
-    /* outline: 1px solid yellow; */
+    padding-left: 15px;
+    /* outline: 1px solid yellow;  */
 }
 
 .sect-padd{
     padding-top: 94px;
-    padding-bottom: 94px
+    padding-bottom: 94px;
+
+    /* outline: 1px solid teal; */
+}
+.no-bot-p {
+    padding-bottom: 0;
 }
 
 
@@ -106,8 +110,8 @@ body {
 }
 
 .header .link {
-    padding-top: 32px;
-    padding-bottom: 32px;}
+    padding-top: 24px;
+    padding-bottom: 25px;}
 
 .site-nav {
     color: var(--scnd-text-color); 
@@ -138,6 +142,9 @@ color: var(--acc);
 
 /* main */
 .hero{ 
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     color: var(--bcg);
     background-color:var(--bcg-dark);
     text-align: center;
@@ -179,12 +186,13 @@ color: var(--acc);
 .flex-features {display: flex;
     flex-wrap: wrap;
     gap: var(--indent);
+    padding-top: 94px;
 
 }
 
 .flex-features .item { 
 flex-basis: calc((100% - var(--indent) * (var(--features) - 1))/var(--features)); 
-padding-top: 94px;
+
 }
 
 
@@ -263,7 +271,9 @@ padding-top: 94px;
 
 /* footer */
 .footer{
+    padding-top: 60px;
     padding-bottom: 60px;
+    
     background-color: var(--bcg-dark);
     color: var(--bcg);
     font-size: 14px;
@@ -273,7 +283,6 @@ padding-top: 94px;
 .block{display: block;}
 
 .footer .logo{
-    padding-top: 60px;
     margin-right: 0;
     margin-bottom: 20px;
 }
@@ -292,11 +301,11 @@ padding-top: 94px;
     display: flex;
     justify-content: center;
     gap: 8px;
+    margin-bottom: 50px;
 }
 .btn-filter{
     padding: 6px 22px;
     border-radius: 4px;
-    margin-bottom: 50px;
 
     font-family: 'Roboto', sans-serif;
     color: var(--scnd-text-color);
