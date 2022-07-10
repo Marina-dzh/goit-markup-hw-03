@@ -186,7 +186,6 @@ color: var(--acc);
 .flex-features {display: flex;
     flex-wrap: wrap;
     gap: var(--indent);
-    padding-top: 94px;
 
 }
 
